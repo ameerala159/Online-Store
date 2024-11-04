@@ -88,3 +88,93 @@ html {
     width: 100%;
     object-fit: contain;
 }
+
+/* product section */
+
+.productSec {
+    background-color: rgba(128, 128, 128, 0.068);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.productSec p {
+    text-align: center;
+    font-weight: bold;
+    color: #243C39;
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.productSec p span {
+    color: var(--main-clr);
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+    margin-inline: 4rem;
+    margin-bottom: 2rem;
+}
+
+.productsContainer .card{
+    min-height: auto;
+    min-width: 300px;
+    width: 90%;
+    margin: auto;
+    background-color: #76e5da47;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.productsContainer .card img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem 1.5rem 0 0;
+    object-fit: fill;
+    margin-bottom: 5px;
+}
+
+.card .shortDesc {
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
+
+.card .priceContainer{
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card h3 , .card p{
+    margin: 0;
+}
+
+@media screen and (max-width:1000px) {
+    .productsContainer {
+        grid-template-columns: 1fr 1fr;
+    }  
+    .productsContainer .card{
+        margin-bottom: 1rem ;
+    }
+    .landingSec .btn-outline-dark{
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .productsContainer {
+        grid-template-columns: 1fr ;
+    }
+    .productsContainer .card{
+        margin-bottom: 1rem ;
+    }
+    .landingSec .btn-outline-dark{
+        display: none;
+    }
+}
