@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --main-clr:#76E5D9;
+    --secondary-clr:#7B918E;
+    --text-clr:#243C39;
+}
+
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #80BBB5; }
+.My-Color-Theme-2-hex { color: #7B918E; }
+.My-Color-Theme-3-hex { color: #76E5D9; }
+.My-Color-Theme-4-hex { color: #506664; }
+.My-Color-Theme-5-hex { color: #243C39; }
+.My-Color-Theme-6-hex { color: #173330; }
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbarSec a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: var(--text-clr);
+    margin-inline: 5px;
+    border-radius: 0.2rem;
+}
+
+
+.navbarSec a:hover {
+    background-color: #243C39;
+    color: var(--main-clr);
+    transition: all 0.5s ease;
+}
+
+.landingSec {
+    width: 90%;
+    margin: auto;
+    height: calc(90vh - 56px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.landingText{
+  margin-inline: 2rem;
+}
+
+.landingText span{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.2rem;
+    color: var(--text-clr);
+    word-spacing: 0.3rem;
+    line-height: 1.5rem;
+}
+
+.landingText p {
+    line-height: 1.2rem;
+}
+
+.landingImg{
+    height: 90%;
+    width: 90%;
+}
+
+.landingImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
