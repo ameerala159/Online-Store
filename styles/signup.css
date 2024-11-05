@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --main-clr:#76E5D9;
+    --secondary-clr:#254a47;
+    --text-clr:#243C39;
+}
+
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #80BBB5; }
+.My-Color-Theme-2-hex { color: #7B918E; }
+.My-Color-Theme-3-hex { color: #76E5D9; }
+.My-Color-Theme-4-hex { color: #506664; }
+.My-Color-Theme-5-hex { color: #243C39; }
+.My-Color-Theme-6-hex { color: #173330; }
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* for overall use */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* navbar styles */
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.signcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 56px);
+    padding: 1rem;
+}
+
+.signcontainer h1 {
+    font-weight: 700;
+    color: var(--text-clr);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}
+
+.signcontainer h1 span {
+    color: #46847e;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #76e5da20;
+    border-radius: 2rem;
+    max-width: 500px;
+}
+
+.form form .input-field {
+    margin-bottom: 2rem;
+    
+}
+
+.form form .input-field input {
+    height: 90%;
+    width: 90%;
+    max-width: 400px;
+    padding-inline: 1rem;
+    color: rgb(218, 236, 252);
+    background-color: var(--secondary-clr);
+    border-radius: 1rem;
+    height: 30px;
+    margin-right: 0.2rem;
+}
+.form form .input-field input::placeholder {
+    color: aliceblue;
+}
+
+.form form button {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.form form h5 {
+    font-size: 1rem;
+}
+
+.form form a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.form form a:hover{
+    color: aliceblue;
+    background-color: black;
+    font-size: 1.2rem;
+    transition: all 0.5s ease-in-out;
+}

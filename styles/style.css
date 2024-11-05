@@ -95,6 +95,7 @@ html {
     background-color: rgba(128, 128, 128, 0.068);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .productSec p {
@@ -159,6 +160,53 @@ html {
     text-decoration: none;
     color: white;
     font-weight: bold;
+
+}
+
+/* footer styles */
+.footer{
+    background-color: #83fef137;
+    
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer .logo{
+    text-decoration: none;
+    color: var(--text-clr);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0.4rem;
+    background-color: var(--secondary-clr);
+    border-radius: 5rem;
+    color: aliceblue;
+}
+
+.footer ul {
+    display: flex;
+    list-style:none;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer .container ul li a {
+    text-decoration: none;
+    color: var(--text-clr);
+    padding-inline: 0.2rem;
+}
+.footer .container ul li a:hover{
+    color: #80BBB5;
+    transition: 0.5s ease-in-out ;
+}
+
+.socials i {
+    padding: 0.4rem;
+    background-color: var(--secondary-clr);
+    border-radius: 50%;
+    color: aliceblue;
 
 }
 
