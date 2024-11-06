@@ -63,7 +63,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    min-height: 500px;
     width: 90%;
     text-align: center;
     padding: 1rem;
@@ -119,9 +119,9 @@ html {
 }
 
 /* errors */
-.usernameer {
+.input-field p {
     text-align: center;
     color: rgb(163, 41, 41);
-    display: none;
+    display: b;
     font-size: 0.8rem;
 }
