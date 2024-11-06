@@ -125,3 +125,10 @@ html {
     display: b;
     font-size: 0.8rem;
 }
+
+.checked {
+    color: rgb(173, 25, 25);
+    font-weight: 700;
+    border: 1px double black;
+    display: none;
+}

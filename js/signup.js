@@ -92,12 +92,12 @@ cpassword.onblur = function () {
         cpasswordchecked = true;
     }
 }
-
+let checkedAll = document.querySelector(".checked");
 let form = document.querySelector("#form");
 form.onsubmit = function(e){
     if(!(userNameChecked && emailChecked && passwordChecked && cpasswordchecked)){
+        checkedAll.style.display = "block";
         e.preventDefault()
-
     }
 
 }
